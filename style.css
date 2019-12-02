@@ -6,7 +6,7 @@ body {
  
 #menu-nav {
   max-width: 1000px;
-  margin: 30px auto;
+  margin: auto;
   background-color: #ecf0f1;
   border-radius: 4px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
