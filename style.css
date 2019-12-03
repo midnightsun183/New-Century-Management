@@ -10,8 +10,8 @@ body {
   background-color: #ecf0f1;
   border-radius: 4px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-/  position: absolute;
-/	bottom: 10px;
+/*  position: absolute;  */
+/*	bottom: 10px;   */
 }
  
 #navigation-bar ul {
@@ -62,4 +62,43 @@ body {
  
 li {
 	list-style: none;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+	
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+/* Add a card effect for articles <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.card {
+    background-color: grey;
+    padding: 20px;
+    margin-top: 20px;
+    /*width: 160px;/*
+    height: 160px;
+    /*border: 2px solid;/*
+    /*color: grey;/*
+    resize: both;
+    overflow: scroll;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
