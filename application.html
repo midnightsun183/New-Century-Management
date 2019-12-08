@@ -380,32 +380,179 @@
 
 	
 <!---------------- Landlord Information ---------------->	
-
-  <table>
+ <table>
    <tbody>
      <tr>
-       <td colspan="2"><h3 class="header3">Landlord Information</h3></td>
+       <td colspan="2"><h3 class="header3">Personal Info</h3></td>
      </tr>
     </tbody>
         <tr>
          <td style="width:50%">
            <div style="margin-top:10px;clear:both;">
-
-<table> 
- <tbody id="hhRentBodyPC">
+<table>
+ <tbody>
   <tr>
-   <th style="width:50%"><label for="landlordNamePC">Landlord Name</label></th>
-    <td style="width:50%" class="requiredField">
-     <input type="text" name="prospect.primaryContact.currentResidenceLandlordName">
-    </td>
-   </tr>
+   <th style="width:30%;"><label for="firstName">First Name</label></th>
+    <td style="width:30%;" class="requiredField"><input type="text" name="prospect.primaryContact.firstName" value="" tabindex="2" id="firstName" class="text"></td>
+  </tr>
+
+  <tr>
+   <th><label for="mi">Full Middle Name</label></th>
+    <td style="width:50%;" class="requiredField">
+     <input type="text" name="prospect.primaryContact.middleName" maxlength="30" value="" tabindex="2" id="mi" class="text">
+      </td>
+       </tr>
+
+
     <tr>
+     <th><label for="lastName"> Last Name</label></th>
+     <td class="requiredField"><input type="text" name="prospect.primaryContact.lastName" value="" tabindex="3" id="lastName" class="text"></td>
+    </tr>
+                            
+   <tr>
+    <th><label for="suffix">Suffix</label></th>
+     <td class="nonRequiredField">
+    <select name="prospect.primaryContact.suffix" tabindex="3" id="suffix" class="text" style="width:25%; border-rigth:1px solid #000000;">
+       <option value=""></option>
+       <option value="Jr">Jr</option>
+       <option value="Sr">Sr</option>
+       <option value="I">I</option>
+       <option value="II">II</option>
+       <option value="III">III</option>
+       <option value="IV">IV</option>
+    </select>
+     </td>
+    </tr>
+                            
+    <tr>
+     <th><label for="maidenName">Maiden Name</label></th>
+      <td class="nonRequiredField">
+       <input type="text" name="prospect.primaryContact.maidenName" value="" tabindex="3" id="maidenName" class="text">
+      </td>
+     </tr>
+                                 <tr>
+                                    <th><label for="homePhone"> Home Phone</label></th>
+                                    <td class="requiredField">
+                                        <input type="text" name="prospect.primaryContact.homePhone" maxlength="22" value="" tabindex="3" id="homePhone" class="text" onchange="formatPhone(this)">
+                                    </td>
+                                </tr>
+                            
+      <tr>
+                                    <th><label for="mobilePhone"> Mobile Phone</label> <img src="../../images/help-icon-red.gif" style="margin-left:5px" title="If using a United States phone number, enter the number as 10 digits and Propertyware will format to (xxx) xxx-xxxx. If using an international number, enter + and up to 15 digits"></th>
+                                    <td class="requiredField">
+                                        <input type="text" name="prospect.primaryContact.mobilePhone" maxlength="22" value="" tabindex="3" id="mobilePhone" class="text" onchange="formatPhone(this)">
+                                    </td>
+                                </tr>
+                            
+                            
+                                <tr>
+                                    <th><label for="email"> Email</label></th>
+                                    <td class="requiredField">
+                                        <input type="text" name="prospect.primaryContact.email" value="" tabindex="3" id="email" class="text">
+                                    </td>
+                                </tr>
+                            
+                            
+                                <tr>
+                                    <th><label for="ssn"> SSN/SIN</label></th>
+                                    <td class="requiredField">
+                                        <input type="text" name="prospect.primaryContact.ssn" maxlength="9" value="" tabindex="3" id="ssn" class="text">
+                                    </td>
+                                </tr>
+                            
+                            <tr>
+                                <th><label for="birthDate"> Date of Birth</label></th>
+                                <td class="requiredField" style="width:50%;">
+                                    <input type="text" name="prospect.primaryContact.birthDateAsString" size="10" maxlength="10" value="" tabindex="3" id="birthDate" class="date" style="cursor:pointer;">
+                                    <br> (mm/dd/yyyy)
+                                </td>
+                            </tr>
+                            
+                                <tr>
+                                    <th><label for="driversLicense">Driver's License #</label></th>
+                                    <td class="requiredField">
+                                        <input type="text" name="prospect.primaryContact.driversLicenseNumber" size="8" value="" tabindex="3" id="driversLicense" class="text" onclick="f(this)" onblur="f(this)" onkeydown="f(this)" onkeyup="f(this)">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><label for="driversLicense">Driver's License State</label></th>
+                                    <td class="requiredField">
+                                        <select name="prospect.primaryContact.driversLicenseState" tabindex="3" id="driversLicenseState" class="text" style=" border-rigth:1px solid #000000;font-size:0.85em">
+    <option value="State / Province">State / Province</option>
+    <option value="--USA--">--USA--</option>
+    <option value="AK">AK</option>
+    <option value="AL">AL</option>
+    <option value="AR">AR</option>
+    <option value="AZ">AZ</option>
+    <option value="CA">CA</option>
+    <option value="CO">CO</option>
+    <option value="CT">CT</option>
+    <option value="DC">DC</option>
+    <option value="DE">DE</option>
+    <option value="FL">FL</option>
+    <option value="GA">GA</option>
+    <option value="GU">GU</option>
+    <option value="HI">HI</option>
+    <option value="IA">IA</option>
+    <option value="ID">ID</option>
+    <option value="IL">IL</option>
+    <option value="IN">IN</option>
+    <option value="KS">KS</option>
+    <option value="KY">KY</option>
+    <option value="LA">LA</option>
+    <option value="MA">MA</option>
+    <option value="MD">MD</option>
+    <option value="ME">ME</option>
+    <option value="MI">MI</option>
+    <option value="MN">MN</option>
+    <option value="MO">MO</option>
+    <option value="MS">MS</option>
+    <option value="MT">MT</option>
+    <option value="NC">NC</option>
+    <option value="ND">ND</option>
+    <option value="NE">NE</option>
+    <option value="NH">NH</option>
+    <option value="NJ">NJ</option>
+    <option value="NM">NM</option>
+    <option value="NV">NV</option>
+    <option value="NY">NY</option>
+    <option value="OH">OH</option>
+    <option value="OK">OK</option>
+    <option value="OR">OR</option>
+    <option value="PA">PA</option>
+    <option value="PR">PR</option>
+    <option value="RI">RI</option>
+    <option value="SC">SC</option>
+    <option value="SD">SD</option>
+    <option value="TN">TN</option>
+    <option value="TX">TX</option>
+    <option value="UT">UT</option>
+    <option value="VA">VA</option>
+    <option value="VI">VI</option>
+    <option value="VT">VT</option>
+    <option value="WA">WA</option>
+    <option value="WI">WI</option>
+    <option value="WV">WV</option>
+    <option value="WY">WY</option>
+    <option value="--Canada--">--Canada--</option>
+    <option value="AB">AB</option>
+    <option value="BC">BC</option>
+    <option value="MB">MB</option>
+    <option value="NB">NB</option>
+    <option value="NL">NL</option>
+    <option value="NT">NT</option>
+    <option value="NS">NS</option>
+    <option value="NU">NU</option>
+    <option value="ON">ON</option>
+    <option value="PE">PE</option>
+    <option value="QC">QC</option>
+    <option value="SK">SK</option>
+    <option value="YT">YT</option>
 
 
-	    
-	    
+</select>
 
-<!---------------------------- Column Two Start -------------------------------->
+
          </td>
         </tr>
       </tbody>
@@ -423,32 +570,173 @@
  <tbody>
                             <tr>
                                 <th style="width:50%"><label for="streetPC">Address</label></th>
-                                <td style="width:50%" class="requiredField"><input type="text" name="prospect.primaryContact.currentResidenceAddress" maxlength="50" value="" tabindex="2" id="streetPC" class="text"></td>
+                                <td style="width:50%" class="requiredField"><input type="text" name="prospect.primaryContact.currentResidenceAddress" maxlength="50" value="" tabindex="4" id="streetPC" class="text"></td>
                             </tr>
                             <tr>
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	 
-     <th><label for="landlordPhonePC">Landlord Phone</label></th>
-      <td class="requiredField">
-       <input type="text" name="prospect.primaryContact.currentResidenceLandlordPhone" value="" tabindex="2" id="landlordPhonePC" class="text" onchange="formatPhone(this)">
-      </td>
-    </tr>
-   </tbody>
-</table>	
+                                <th><label for="streetContPC"> Address Cont.</label></th>
+                                <td class="nonRequiredField"><input type="text" name="prospect.primaryContact.currentResidenceAddressCont" maxlength="50" value="" tabindex="4" id="streetContPC" class="text"></td>
+                            </tr>
+                            <tr>
+                                <th><label for="cityPC"> City</label></th>
+                                <td class="requiredField"><input type="text" name="prospect.primaryContact.currentResidenceCity" maxlength="50" value="" tabindex="4" id="cityPC" class="text"></td>
+                            </tr>
+                            <tr>
+                                <th><label for="statePC"> State / Province</label></th>
+                                <td class="requiredField"><select name="prospect.primaryContact.currentResidenceState" tabindex="4" id="statePC" class="text" style="border-rigth:1px solid #000000;font-size:0.85em">
+    <option value="State / Province">State / Province</option>
+    <option value="--USA--">--USA--</option>
+    <option value="AK">AK</option>
+    <option value="AL">AL</option>
+    <option value="AR">AR</option>
+    <option value="AZ">AZ</option>
+    <option value="CA">CA</option>
+    <option value="CO">CO</option>
+    <option value="CT">CT</option>
+    <option value="DC">DC</option>
+    <option value="DE">DE</option>
+    <option value="FL">FL</option>
+    <option value="GA">GA</option>
+    <option value="GU">GU</option>
+    <option value="HI">HI</option>
+    <option value="IA">IA</option>
+    <option value="ID">ID</option>
+    <option value="IL">IL</option>
+    <option value="IN">IN</option>
+    <option value="KS">KS</option>
+    <option value="KY">KY</option>
+    <option value="LA">LA</option>
+    <option value="MA">MA</option>
+    <option value="MD">MD</option>
+    <option value="ME">ME</option>
+    <option value="MI">MI</option>
+    <option value="MN">MN</option>
+    <option value="MO">MO</option>
+    <option value="MS">MS</option>
+    <option value="MT">MT</option>
+    <option value="NC">NC</option>
+    <option value="ND">ND</option>
+    <option value="NE">NE</option>
+    <option value="NH">NH</option>
+    <option value="NJ">NJ</option>
+    <option value="NM">NM</option>
+    <option value="NV">NV</option>
+    <option value="NY">NY</option>
+    <option value="OH">OH</option>
+    <option value="OK">OK</option>
+    <option value="OR">OR</option>
+    <option value="PA">PA</option>
+    <option value="PR">PR</option>
+    <option value="RI">RI</option>
+    <option value="SC">SC</option>
+    <option value="SD">SD</option>
+    <option value="TN">TN</option>
+    <option value="TX">TX</option>
+    <option value="UT">UT</option>
+    <option value="VA">VA</option>
+    <option value="VI">VI</option>
+    <option value="VT">VT</option>
+    <option value="WA">WA</option>
+    <option value="WI">WI</option>
+    <option value="WV">WV</option>
+    <option value="WY">WY</option>
+    <option value="--Canada--">--Canada--</option>
+    <option value="AB">AB</option>
+    <option value="BC">BC</option>
+    <option value="MB">MB</option>
+    <option value="NB">NB</option>
+    <option value="NL">NL</option>
+    <option value="NT">NT</option>
+    <option value="NS">NS</option>
+    <option value="NU">NU</option>
+    <option value="ON">ON</option>
+    <option value="PE">PE</option>
+    <option value="QC">QC</option>
+    <option value="SK">SK</option>
+    <option value="YT">YT</option>
 
-	 
-	          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+</select>
 </td>
+                     </tr>
+                            <tr>
+                                <th><label for="zipPC"> Zip / Postal Code</label></th>
+                                <td class="requiredField"><input type="text" name="prospect.primaryContact.currentResidenceZip" maxlength="10" value="" tabindex="4" id="zipPC" class="text" onkeypress="restrictSpecialChar(1);"></td>
+                            </tr>
+                            
+                                <tr>
+                                    <th style="width:50%"><label for="rentOrOwnPC"> Rent or Own?</label></th>
+                                    <td style="width:50%" class="requiredField">
+                                        <select name="prospect.primaryContact.currentResidenceType" tabindex="4" id="rentOrOwnPC" class="text" style="border-rigth:1px solid #000000;font-size:0.85em" onchange="toggleRentOwn('rentOrOwnPC', 'hhRentBodyPC', 'hhOwnBodyPC', true);">
+    <option value="Rent" selected="selected">Rent</option>
+    <option value="Own">Own</option>
+</select>
+                                    </td>
+                                </tr>
+                            
+						</tbody>
+
+                        
+
+
+                            
+                                <tr>
+                                    <th><label for="rentAmountPC">Rent Amount</label></th>
+                                    <td class="requiredField">
+                                        <input type="text" name="prospect.primaryContact.currentResidenceRent" value="" tabindex="4" id="rentAmountPC" class="text" onchange="formatCurrency(this)">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><label for="rentPeriodPC">Rent Period</label></th>
+                                    <td class="requiredField">
+                                        <select name="prospect.primaryContact.currentResidenceRentPeriod" tabindex="4" id="rentPeriodPC">
+    <option value="Week">Week</option>
+    <option value="Month">Month</option>
+    <option value="Year">Year</option>
+</select>
+                                    </td>
+                                </tr>
+                            
+                            
+                                <tr>
+                                    <th><label for="hhRentBodyPCStartDate">At this address since?</label></th>
+                                    <td id="rentResidencyStartTD" class="nonRequiredField">
+                                        
+                                            <input type="text" name="prospect.primaryContact.currentResidenceStartDateAsString" size="10" maxlength="10" value="" tabindex="4" id="hhRentBodyPCStartDate" class="date" style="cursor:pointer;" onmouseover="init();">
+                                        
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <th>&nbsp;</th>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            
+                                 <tr>
+                                    <th>&nbsp;</th>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            
+                        </tbody>
+
+                        <tbody id="hhOwnBodyPC" style="display:none;">
+                            
+
+                                 <tr>
+                                    <th>&nbsp;</th>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            
+                                 <tr>
+                                    <th>&nbsp;</th>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            
+                        </tbody>
+                   </table>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+	
 
 <!---------------- End of Landlord Information ---------------->
 		   
