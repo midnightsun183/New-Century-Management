@@ -144,7 +144,7 @@ input[type=submit]:hover {
 
 .header3{
   width: 100%;
-  align: center;
+  text-align: center;
   color: #34495e;
   padding: 10px 15px;
   margin: 8px 0;
