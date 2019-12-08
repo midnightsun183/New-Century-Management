@@ -22,21 +22,23 @@
   <div class="container">
 	<h2>Rental Application Form</h2>
 
-	<form action="/action_page.php">
-  		<input type="text" name="firstname" value="First Name">
-  		<br>
-  		
-  		<input type="text" name="lastname" value="Last Name">
-		
-		<input type="text" name="phonenumber" value="(###) ###-####">
-  		<br>
-  		
-  		<input type="text" name="SSN" value="9 Digit Social Secuirty Number">
-		
- 		 <br><br>
-  		<input type="submit" value="Submit">
-	</form> 
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
 	  <p>By click the Submit, you agree to our <a>Privacy Policy</a> and <a>Rental Application Policy</a>. 
 	   <br>
 	     If you have any questions, please email us at info.NewCenturyManagement@gmai.com.
