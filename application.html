@@ -293,11 +293,9 @@
     <option value="SK">SK</option>
     <option value="YT">YT</option>
 
-
 </select>
-
 </td>
-                            </tr>
+                     </tr>
                             <tr>
                                 <th><label for="zipPC"> Zip / Postal Code</label></th>
                                 <td class="requiredField"><input type="text" name="prospect.primaryContact.currentResidenceZip" maxlength="10" value="" tabindex="4" id="zipPC" class="text" onkeypress="restrictSpecialChar(1);"></td>
@@ -309,11 +307,7 @@
                                         <select name="prospect.primaryContact.currentResidenceType" tabindex="4" id="rentOrOwnPC" class="text" style="border-rigth:1px solid #000000;font-size:0.85em" onchange="toggleRentOwn('rentOrOwnPC', 'hhRentBodyPC', 'hhOwnBodyPC', true);">
     <option value="Rent" selected="selected">Rent</option>
     <option value="Own">Own</option>
-
-
 </select>
-
-
                                     </td>
                                 </tr>
                             
@@ -348,11 +342,7 @@
     <option value="Week">Week</option>
     <option value="Month">Month</option>
     <option value="Year">Year</option>
-
-
 </select>
-
-
                                     </td>
                                 </tr>
                             
@@ -365,8 +355,6 @@
                                         
                                     </td>
                                 </tr>
-                            
-                            
                                  <tr>
                                     <th>&nbsp;</th>
                                     <td>&nbsp;</td>
@@ -379,13 +367,9 @@
                             
                         </tbody>
 
-                        
-
                         <tbody id="hhOwnBodyPC" style="display:none;">
                             
-                            
-                            
-                            
+
                                  <tr>
                                     <th>&nbsp;</th>
                                     <td>&nbsp;</td>
@@ -435,31 +419,40 @@
         }
     }).render('#paypal-button-container');
 </script>
+<!------------ Submit Button ------------->		
 	
- <input type="submit" value="Submit" action="apply.php" method="get">
+<input type="submit" value="Submit" action="apply.php" method="get">
 	
-	<input type="checkbox" name="vehicle1" value="Privacy Policy" checked required> 
-		I have read & agreed to the <a>Privacy Policy</a> 
-			<br>
-	<input type="checkbox" name="vehicle1" value="Application Policy" checked required> 
-		I have read & agreed to the <a>Rental Application Policy</a>. 
-	  <br>
-		<br>
-	  <center>
-			If you have any questions, please email us at 
-				<br>
-			<a href="mailto:EMAILADDRESS">info.NewCenturyManagement@gmail.com</a>.
-	  </center>
+<!------------ End of Submit Button ------------->	
+	
+	
+	
+	
+<!------------ Legal Disclosures ------------->	
 
-	</form> 
-		</div>
-	</div>
-</center> 
-	  
-	</div>
+<input type="checkbox" name="vehicle1" value="Privacy Policy" checked required> 
+ I have read & agreed to the <a>Privacy Policy</a> 
+ <br>
+ <input type="checkbox" name="vehicle1" value="Application Policy" checked required> 
+ I have read & agreed to the <a>Rental Application Policy</a>. 
+  <br>
+ <br>
+ <center>
+  If you have any questions, please email us at 
+ <br>
+ <a href="mailto:EMAILADDRESS">info.NewCenturyManagement@gmail.com</a>.
+</center>
+	
+<!------------ End of Legal Disclosures ------------->	
+
+      </form> 
+     </div>
+    </div>
+     </center> 
+   </div>
 </div>	
 	  
-<!------------------------------------------------------------------
+<!------------------------------------------------------------------ Not used
 
 <form id="signUpForm">
   <input type="email" id="emailField" required>
