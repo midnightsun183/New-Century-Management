@@ -54,14 +54,6 @@ body {
   left: 0;
 }
 
-/* Position the navbar container inside the image */
-.navigation-container {
-  position: absolute;
-  margin: 20px;
-  width: auto;
-}
-
-
 .outer-div
 {
      padding: 30px;
