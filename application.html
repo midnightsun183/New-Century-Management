@@ -21,101 +21,7 @@
 <div class="gray-card" >
   <div class="container">
 	<b><h1>Rental Application Form</h1></b>
-
-<div align = "left">
-
-<!--- Begin Form --->	
-<form action="/action_page.php">
-<!--- Begin Form for Primary Applicant  --->	 
-		First Name
-    	<input type="text" id="fname" name="firstname" placeholder="First Name" required>
-		Last Name
-   	 <input type="text" id="lname" name="lastname" placeholder="Last Name" required>
-		Street Address
-    	<input type="text" id="ApplicantStreetAddressL1" name="lastname" placeholder="Street Address" required>
-		Apartment or Unit Number
-			<input type="text" id="ApplicantAddressL2" name="lastname" placeholder="Apartment Number">
-		City
-	  	<input type="text" id="ApplicantCity" name="lastname" placeholder="City" required>
-		Zip Code
-			<input type="text" id="ApplicantZipCode" name="lastname" placeholder="Zip Code" required>
- 		Country
-   	 <select id="country" name="United States of America">
-      	<option value="australia">United State of America</option>
-    	  <option value="canada">Canada</option>
-      	<option value="other">Other</option>
-   	 </select>
-		Email
-			<input type="email" id="email-field" placeholder="Email" required>
-		Social Security Number
-			<input type="text" id="SSN" name="SSN" placeholder="Social Secuirity Number" required>
-	
-		Income
-			<input type="text" id="Income" name="Income" placeholder="Income" required>
-	   	 <select id="income-frequency" name="Monthly">
-      	<option value="Monthly">Per Month</option>
-    	  <option value="Bi-Weekly">Bi-Weekly</option>
-      	<option value="Weekly">Weekly</option>
-   	 </select>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<div id="paypal-button-container"></div>
-<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
-<script>
-    paypal.Buttons({
-        style: {
-            shape: 'pill',
-            color: 'gold',
-            layout: 'vertical',
-            label: 'paypal',
-            
-        },
-        createOrder: function(data, actions) {
-            return actions.order.create({
-                purchase_units: [{
-                    amount: {
-                        value: '75'
-                    }
-                }]
-            });
-        },
-        onApprove: function(data, actions) {
-            return actions.order.capture().then(function(details) {
-                alert('Transaction completed by ' + details.payer.name.given_name + '!');
-            });
-        }
-    }).render('#paypal-button-container');
-</script>
-	
- <input type="submit" value="Submit" action="apply.php" method="get">
-	
-	<input type="checkbox" name="vehicle1" value="Privacy Policy" checked required> 
-		I have read & agreed to the <a>Privacy Policy</a> 
-			<br>
-	<input type="checkbox" name="vehicle1" value="Application Policy" checked required> 
-		I have read & agreed to the <a>Rental Application Policy</a>. 
-	  <br>
-		<br>
-	  <center>
-			If you have any questions, please email us at 
-				<br>
-			<a href="mailto:EMAILADDRESS">info.NewCenturyManagement@gmail.com</a>.
-	  </center>
-
-</form>
-</center>
-
-
-	  
-<center>
-	<div class="gray-card" >
- 	 <div class="container">		
-		
-		<div id="doc1" class="yui-t7">
+	<div id="doc1" class="yui-t7">
     <div id="hd">
         <div class="yui-ge">
             <div class="yui-u first">
@@ -1216,10 +1122,53 @@ December 2019
 		
 		
 			
-			
-</div>
+			<div id="paypal-button-container"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+<script>
+    paypal.Buttons({
+        style: {
+            shape: 'pill',
+            color: 'gold',
+            layout: 'vertical',
+            label: 'paypal',
+            
+        },
+        createOrder: function(data, actions) {
+            return actions.order.create({
+                purchase_units: [{
+                    amount: {
+                        value: '75'
+                    }
+                }]
+            });
+        },
+        onApprove: function(data, actions) {
+            return actions.order.capture().then(function(details) {
+                alert('Transaction completed by ' + details.payer.name.given_name + '!');
+            });
+        }
+    }).render('#paypal-button-container');
+</script>
+	
+ <input type="submit" value="Submit" action="apply.php" method="get">
+	
+	<input type="checkbox" name="vehicle1" value="Privacy Policy" checked required> 
+		I have read & agreed to the <a>Privacy Policy</a> 
+			<br>
+	<input type="checkbox" name="vehicle1" value="Application Policy" checked required> 
+		I have read & agreed to the <a>Rental Application Policy</a>. 
+	  <br>
+		<br>
+	  <center>
+			If you have any questions, please email us at 
+				<br>
+			<a href="mailto:EMAILADDRESS">info.NewCenturyManagement@gmail.com</a>.
+	  </center>
+
+	</form> 
+		</div>
 	</div>
-			</center> 
+</center> 
 	  
 <!------------------------------------------------------------------
 
