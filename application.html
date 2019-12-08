@@ -20,25 +20,22 @@
 <center>
 <div class="gray-card">
   <div class="container">
-	<b><h1>New Century Management
-		<br>
-		Rental Application Form</h1></b>
+	<b><h1>Rental Application Form</h1></b>
 
 <div>
   <form action="/action_page.php">
     <label for="fname">Primary Appilcant's Information</label>
-    <input type="text" id="fname" name="firstname" placeholder="Applicant's name">
-    <input type="text" id="lname" name="lastname" placeholder="Applicant's Last name">
-
-	<h2>Applicant's Address</h2>
+    <input type="text" id="fname" name="firstname" placeholder="First Name">
+    <input type="text" id="lname" name="lastname" placeholder="Last Name">
+	<br>
     <input type="text" id="ApplicantStreetAddressL1" name="lastname" placeholder="Street Address">
 		<input type="text" id="ApplicantAddressL2" name="lastname" placeholder="Apartment Number">
 	  <input type="text" id="ApplicantCity" name="lastname" placeholder="City">
 		<input type="text" id="ApplicantZipCode" name="lastname" placeholder="Zip Code">
-		
-		<label for="ApplicantAddress">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Applicant's Current Address">
-	  
+	<br>
+		<input type="email" id="emailField" placeholder="Email" required>
+	<br>
+		<input type="text" id="SSN" name="SSN" placeholder="Social Secuirity Number">
 	  
 	  
     <label for="country">Country</label>
@@ -55,6 +52,36 @@
 	     If you have any questions, please email us at info.NewCenturyManagement@gmail.com.
 		  "/action_page.php".</p>
 	  
+--------------------------------------------------------------
+<form id="signUpForm">
+  <input type="email" id="emailField" required>
+  <button id="okButton" disabled>OK</button>
+</form>
+
+<script>
+const signUpForm = document.getElementById('signUpForm');
+const emailField = document.getElementById('emailField');
+const okButton = document.getElementById('okButton');
+  
+emailField.addEventListener('keyup', function (event) {
+  isValidEmail = emailField.checkValidity();
+  
+  if ( isValidEmail ) {
+    okButton.disabled = false;
+  } else {
+    okButton.disabled = true;
+  }
+});
+  
+okButton.addEventListener('click', function (event) {
+  signUpForm.submit();
+});
+</script>
+	
+	
+	--------------------------
+	
+	
   </div>
 </div>
 <br>
