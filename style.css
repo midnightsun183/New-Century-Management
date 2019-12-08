@@ -144,6 +144,10 @@ input[type=submit]:hover {
 
 .card-span{
   width: 100%;
-  border: 4px solid #ccc;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
   border-radius: 4px;
+  box-sizing: border-box;
 }
