@@ -27,8 +27,14 @@
   - [ ] PayPal
   - [ ] CreditCard
    
-  
+- [ ] Disclosures
+    - [ ] Legal
+    - [ ] Application Disclosure
+    - [ ] Privacy Statement
+    
 - [ ] Miscelanious
   - [ ] Fix Footer
   - [ ] Links for Navigation Bar
   - [ ] 
+
+
