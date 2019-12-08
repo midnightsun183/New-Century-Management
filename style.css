@@ -113,3 +113,14 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
+
+
+
+.email-field:valid {
+  border-color: black;
+}.email-field:invalid {
+  border-color: red;
+}
+
+
+
