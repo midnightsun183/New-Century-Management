@@ -28,17 +28,17 @@
 <form action="/action_page.php">
 <!--- Begin Form for Primary Applicant  --->	 
 		First Name
-    	<input type="text" id="fname" name="firstname" placeholder="First Name">
+    	<input type="text" id="fname" name="firstname" placeholder="First Name" required>
 		Last Name
-   	 <input type="text" id="lname" name="lastname" placeholder="Last Name">
+   	 <input type="text" id="lname" name="lastname" placeholder="Last Name" required>
 		Street Address
-    	<input type="text" id="ApplicantStreetAddressL1" name="lastname" placeholder="Street Address">
+    	<input type="text" id="ApplicantStreetAddressL1" name="lastname" placeholder="Street Address" required>
 		Apartment or Unit Number
 			<input type="text" id="ApplicantAddressL2" name="lastname" placeholder="Apartment Number">
 		City
-	  	<input type="text" id="ApplicantCity" name="lastname" placeholder="City">
+	  	<input type="text" id="ApplicantCity" name="lastname" placeholder="City" required>
 		Zip Code
-			<input type="text" id="ApplicantZipCode" name="lastname" placeholder="Zip Code">
+			<input type="text" id="ApplicantZipCode" name="lastname" placeholder="Zip Code" required>
  		Country
    	 <select id="country" name="United States of America">
       	<option value="australia">United State of America</option>
@@ -47,8 +47,8 @@
    	 </select>
 		Email
 			<input type="email" id="email-field" placeholder="Email" required>
-		Social Security Number
-			<input type="text" id="SSN" name="SSN" placeholder="Social Secuirity Number" Hidden>
+		Social Security Numberrequired
+			<input type="text" id="SSN" name="SSN" placeholder="Social Secuirity Number" required>
 	<br>
 	<br>
   		<input type="submit" value="Submit">
