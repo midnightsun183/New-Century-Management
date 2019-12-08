@@ -61,20 +61,6 @@ body {
   width: auto;
 }
 
-.bg-img {
-  /* The image used */
-  background-image: url("https://media.licdn.com/dms/image/C4E22AQFPa09z8HLeoA/feedshare-shrink_2048_1536/0?e=1578528000&v=beta&t=1CEOaU8GdA_iFZS3X6oE4_nx_pTVLy-hW4wF0ugrdvA");
-
-  min-height: 380px;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  /* Needed to position the navbar */
-  position: relative;
-}
 
 .outer-div
 {
