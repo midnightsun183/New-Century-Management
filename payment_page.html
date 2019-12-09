@@ -18,7 +18,21 @@
 <body>
 <center>
 	
-<a href="#" class="Zillow">Zillow Pay</a>
+<script>
+    paypal.Buttons({
+        style: {
+            shape: 'rect',
+            color: 'gold',
+            layout: 'vertical',
+            label: 'pay',
+            
+        });
+    }).render('#paypal-button-container');
+</script>
+	
+	
+	
+	
 
 <div class="outer-div">
 <div id="paypal-button-container"></div>
