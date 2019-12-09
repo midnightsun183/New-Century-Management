@@ -158,11 +158,6 @@ input[type=submit]:hover {
 
 
 .Zillow {
-	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
-	background-color:#3d94f6;
-	border-radius:8px;
-	width:45%;
-	height:3%;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -170,8 +165,11 @@ input[type=submit]:hover {
 	font-size:20px;
 	font-weight:bold;
 	font-style:italic;
-	padding:32px 76px;
-	text-decoration:none;
+        shape: 'rect',
+        layout: 'vertical',
+        label: 'Zillow',
+            
+        },
 }
 .Zillow:hover {
 	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
