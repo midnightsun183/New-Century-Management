@@ -158,16 +158,20 @@ input[type=submit]:hover {
 
 
 .Zillow {
+	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	background-color:#3d94f6;
+	border-radius:8px;
+	width:32%:
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Georgia;
-	font-size:20px;
+	font-size:28px;
 	font-weight:bold;
 	font-style:italic;
-        shape: 'rect',
-        layout: 'vertical',
-        label: 'Zillow',
+	padding:12px 76px;
+	text-decoration:none;
+}
 }
 
 .Zillow:hover {
