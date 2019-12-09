@@ -161,8 +161,8 @@ input[type=submit]:hover {
 	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
 	background-color:#3d94f6;
 	border-radius:8px;
-	width:40%;
-	height:5%;
+	width:45%;
+	height:3%;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
