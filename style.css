@@ -168,13 +168,13 @@ input[type=submit]:hover {
         shape: 'rect',
         layout: 'vertical',
         label: 'Zillow',
-            
-        },
 }
+
 .Zillow:hover {
 	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
 	background-color:#1e62d0;
 }
+
 .Zillow:active {
 	position:relative;
 	top:1px;
