@@ -286,7 +286,7 @@ input[type=submit]:hover {
 	
 
 #fs-frm [type="email"] {
-  width: 80%;
+  width: 100%;
 }
 #fs-frm [type="button"],
 #fs-frm [type="submit"],
