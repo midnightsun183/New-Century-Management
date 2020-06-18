@@ -17,8 +17,26 @@
 <center>
 <div class="gray-card">
 <div class="container">
-		   
-<!------------ Begin Form ------------>
+	
+<!-- Begin Form -->
+	
+<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/macdonald.corey.a@gmail.com" method="post">
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Full Name</label>
+    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+    <label for="email-address">Email Address</label>
+    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+    <label for="message">Message</label>
+    <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+  </fieldset>
+  <input type="submit" value="Submit">
+</form>
+	
+<!-- End Form -->
+	
+	
+<!------------ Begin Form ------------
 <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/macdonald.corey.a@gmail.com" method="post">
   <fieldset id="fs-frm-inputs">
     <label for="full-name">Full Name</label>
@@ -139,35 +157,7 @@
 }
 </style>
 
-<!------------------------------------------------------------------ Not used
-
-<form id="signUpForm">
-  <input type="email" id="emailField" required>
-  <button id="okButton" disabled>OK</button>
-</form>
-
-<script>
-const signUpForm = document.getElementById('signUpForm');
-const emailField = document.getElementById('emailField');
-const okButton = document.getElementById('okButton');
-  
-emailField.addEventListener('keyup', function (event) {
-  isValidEmail = emailField.checkValidity();
-  
-  if ( isValidEmail ) {
-    okButton.disabled = false;
-  } else {
-    okButton.disabled = true;
-  }
-});
-  
-okButton.addEventListener('click', function (event) {
-  signUpForm.submit();
-});
-</script>
-	
-	
-	-------------------------->
+--->
 	
 	
 
