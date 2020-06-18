@@ -229,7 +229,7 @@ input[type=submit]:hover {
 
 
 
-
+/* for use with the "contact us form
 
 #fs-frm input,
 #fs-frm select,
@@ -286,7 +286,7 @@ input[type=submit]:hover {
 	
 
 #fs-frm [type="email"] {
-  width: 100%;
+  width: 900%;
 }
 #fs-frm [type="button"],
 #fs-frm [type="submit"],
@@ -343,3 +343,4 @@ input[type=submit]:hover {
   margin-right: 3%;
 }
 
+/*End use of CSS for "Contact Us Form"
