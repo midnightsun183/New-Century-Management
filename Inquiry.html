@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Century Management</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script src="https://kit.fontawesome.com/8372bef49e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
+  <link rel="icon" href="https://cdn.onlinewebfonts.com/svg/img_74562.png">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+<center>
+<div class="gray-card" >
+ <div class="container">
+		   
+<!------------ Begin Form ------------>
+<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Full Name</label>
+    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+    <label for="email-address">Email Address</label>
+    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+    <label for="message">Message</label>
+    <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+  </fieldset>
+  <input type="submit" value="Submit">
+</form>  
+<!------------------------------------------------------------------ Not used
+
+<form id="signUpForm">
+  <input type="email" id="emailField" required>
+  <button id="okButton" disabled>OK</button>
+</form>
+
+<script>
+const signUpForm = document.getElementById('signUpForm');
+const emailField = document.getElementById('emailField');
+const okButton = document.getElementById('okButton');
+  
+emailField.addEventListener('keyup', function (event) {
+  isValidEmail = emailField.checkValidity();
+  
+  if ( isValidEmail ) {
+    okButton.disabled = false;
+  } else {
+    okButton.disabled = true;
+  }
+});
+  
+okButton.addEventListener('click', function (event) {
+  signUpForm.submit();
+});
+</script>
+	
+	
+	-------------------------->
+	
+	
+
+	
+	
+<!-- Navigation Bar-->
+<div id="menu-nav">
+  <div id="navigation-bar">
+    <ul>
+      <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+      <li><a href="application.html"><i class="fa fa-pencil-square-o"></i><span>Apply</span></a></li>
+      <li><a href="services.html"><i class="fa fa-handshake"></i><span> Services</span></a></li>
+      <li><a href="contact.html"><i class="fa fa-user"></i><span> Contact</span></a></li>
+      <li><a href="payment_page.html"><i class="fa fa-book"></i><span> Payments</span></a></li>
+     <!-- <li><a href="news.html"><i class="fa fa-rss"></i> <span> News</span></a></li> -->
+    </ul>
+  </div>
+ </div>
+ <!-- End Navigation Bar-->
+
+<!-- Scroll to Top Button-->	
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<!-- End of Scroll to Top Button-->	
+</body>
+	
+
+<footer>
+<center>
+    © 1992-2019 Telos Brothers.
+</center>
+	
+</footer>
+</html>
+
+
