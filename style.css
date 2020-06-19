@@ -3,6 +3,15 @@ body {
   font: normal 300 18px "Roboto", sans-serif;
 }
  
+#banner{ 
+  max-width: 1000px;
+  margin: auto;
+  background-color: #ecf0f1;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);	
+
+}
+
 #menu-nav {
   max-width: 1000px;
   margin: auto;
@@ -155,34 +164,6 @@ input[type=submit]:hover {
   border: 2px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-}
-
-
-.Zillow {
-	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
-	background-color:#3d94f6;
-	border-radius:8px;
-	width:62%:
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Georgia;
-	font-size:28px;
-	font-weight:bold;
-	font-style:italic;
-	padding:12px 76px;
-	text-decoration:none;
-	over-flow: hidden;
-}
-
-.Zillow:hover {
-	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
-	background-color:#1e62d0;
-}
-
-.Zillow:active {
-	position:relative;
-	top:1px;
 }
 
 
